@@ -1,4 +1,3 @@
-document.body.style.backgroundColor = "black";
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js')
     .then((registration) => {
@@ -9,4 +8,4 @@ if ('serviceWorker' in navigator) {
 });
 }
 let title = document.title;
-window.onload = window.location.href = title;
+window.location.href = title;
